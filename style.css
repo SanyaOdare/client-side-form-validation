@@ -10,10 +10,48 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* content section*/
+
+.content {
+  background-color: #304E7B;
+  width: 55%;
+  min-height: 100vh;
+  padding: 10px 20px;
+}
+
+#brand-image {
+  color: #fff;
+  font-size: 3rem;  
+  font-weight: 100;
+}
+
+.image {
+  background-image: url("./image/illustration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 65%;
+}
+
+.text {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
 /* form section */
 
 form {
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  /* max-width: 400px; */
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 50px;
 }
