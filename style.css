@@ -18,6 +18,9 @@ body {
 /* content section*/
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #304E7B;
   width: 55%;
   min-height: 100vh;
@@ -91,6 +94,7 @@ input:focus {
 
 .btn {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 15px;
 }
@@ -172,3 +176,28 @@ button:hover {
 }
 
 /* media queries */
+
+@media (max-width: 900px) {
+  .container {    
+    flex-direction: column;
+  }
+
+  form,
+  .content {
+    width: 100% !important;
+  }
+
+  .btn {
+    flex-direction: column; 
+  }
+
+  .image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    padding: 20px;
+  }
+}
